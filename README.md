@@ -1,5 +1,5 @@
--Boom  	
--====
+Boom  	
+====
 
 This is Boom, a boilerplate I developed for quick and simple prototyping within the browser.
 
