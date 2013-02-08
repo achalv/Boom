@@ -1,3 +1,6 @@
+-Boom  	
+-====
+
 This is Boom, a boilerplate I developed for quick and simple prototyping within the browser.
 
 This is far from perfect - I developed it at a hackathon, and I feel that until all loopholes have been closed, it's use should be limited to quick proyotyping.
