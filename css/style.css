@@ -94,7 +94,7 @@ input:focus {
 
 .basic-whole     { width: 100%;   }
 .basic-fourfifths{ width: 80%;    }
-.basic-threequarts{ width: 75%;   }
+.basic-threequarts{ width:75%;   }
 .basic-twothirds { width: 66.66%; }
 .basic-half      { width: 50%;    }
 .basic-third     { width: 33.33%; }
