@@ -1,4 +1,4 @@
-/*Page Layout & Basic Styles*/
+/*Page Layout & boom Styles*/
 * {
     margin: 0;
     padding: 0;    
@@ -67,46 +67,46 @@ input:focus {
     }
 
 
-/*Basic Grid Setup*/
+/*Boom Grid Setup*/
 
-.basic {
+.boom {
     max-width: 960px;
     margin: auto;
     padding-bottom: 20px;
 }
 
     /* -- Fix width for floated elements -- */
-    .basic:after {
+    .boom:after {
         content: "";
         display: table;
         clear: both;
     }
 
-[class*='basic-'] {
+[class*='boom-'] {
     float: left;
     display: inline-block;
     padding: 20px 10px 0 10px;
 }
 
 /* --------------------------------------------------------------
---- Basic Responsive Grid
+--- boom Responsive Grid
 -------------------------------------------------------------- */
 
-.basic-whole     { width: 100%;   }
-.basic-fourfifths{ width: 80%;    }
-.basic-threequarts{ width:75%;   }
-.basic-twothirds { width: 66.66%; }
-.basic-half      { width: 50%;    }
-.basic-third     { width: 33.33%; }
-.basic-quarter   { width: 25%;    }
-.basic-fifth     { width: 20%;    }
+.boom-whole     { width: 100%;   }
+.boom-fourfifths{ width: 80%;    }
+.boom-threequarts{ width:75%;   }
+.boom-twothirds { width: 66.66%; }
+.boom-half      { width: 50%;    }
+.boom-third     { width: 33.33%; }
+.boom-quarter   { width: 25%;    }
+.boom-fifth     { width: 20%;    }
 
 @media only screen and (max-width: 480px) {
-    .basic-whole,
-    .basic-half,
-    .basic-third,
-    .basic-quarter,
-    .basic-fifth { width: 100%;   }
+    .boom-whole,
+    .boom-half,
+    .boom-third,
+    .boom-quarter,
+    .boom-fifth { width: 100%;   }
 }
 
 @media only screen and (max-width: 480px) {
