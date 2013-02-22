@@ -11,3 +11,7 @@ Or, say, you need to show a customer who's going to hire you how their website w
 Feel free to use and modify, and build upon this as you think fit - A mention in your project's documentation, however, would be really awesome.
 
 Use it well!
+
+//ToDo:
+>>> Add supoort for Redacted Webfont
+>>> Add Demo page
