@@ -13,5 +13,6 @@ Feel free to use and modify, and build upon this as you think fit - A mention in
 Use it well!
 
 //ToDo:
->>> Add supoort for Redacted Webfont
->>> Add Demo page
+> Add supoort for Redacted Webfont
+
+> Add demo page
