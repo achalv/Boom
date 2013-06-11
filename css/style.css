@@ -9,7 +9,7 @@
 }
 
 html { 
-    overflow-y: scroll; /* Forcing a vertical scrollbar to prevent jumpy page */
+    overflow-y: scroll; /* Render a vertical scrollbar to prevent jumpy page */
 }
 
 body {
@@ -67,36 +67,36 @@ a, a:visited {
         display: table;
         clear: both;
     }
-
+/* -- Really not necessary --
 [class*='boom-'] {
     float: left;
     display: inline-block;
     padding: 20px 10px 0 10px;
-}
+} */
 
 /* --------------------------------------------------------------
 --- Boom - Responsive Grid
 -------------------------------------------------------------- */
 
-.boom-whole      { width: 100%;   }
-.boom-fourfifths { width: 80%;    }
-.boom-threequarts{ width:75%;   }
-.boom-twothirds  { width: 66.66%; }
-.boom-half       { width: 50%;    }
-.boom-third      { width: 33.33%; }
-.boom-quarter    { width: 25%;    }
-.boom-fifth      { width: 20%;    }
+.boom-whole       { width: 100%;   }
+.boom-fourfifths  { width: 80%;    }
+.boom-threequarts { width: 75%;    }
+.boom-twothirds   { width: 66.66%; }
+.boom-half        { width: 50%;    }
+.boom-third       { width: 33.33%; }
+.boom-quarter     { width: 25%;    }
+.boom-fifth       { width: 20%;    }
 
 @media only screen and (max-width: 480px) {
     .boom-whole,
     .boom-half,
     .boom-third,
     .boom-quarter,
-    .boom-fifth { width: 100%;   }
+    .boom-fifth   { width: 100%;   }
 }
 
 @media only screen and (max-width: 480px) {
-    header { width: 100%;   }
+    header 	   { width: 100%;   }
 }
 
 
