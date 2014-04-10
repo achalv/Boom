@@ -69,6 +69,7 @@ vice-versa, for ease of development. */
 .boom-third       	{ width: 33.33%; }
 .boom-quarter     	{ width: 25%;    }
 .boom-fifth       	{ width: 20%;    }
+.boom-tenth         { width: 10%;    }
 
 
 /* This is a media query.
