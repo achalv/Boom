@@ -1,4 +1,7 @@
 /*Page Layout & boom Styles*/
+
+/*Extremely basic reset.*/
+
 * {
     margin: 0;
     padding: 0;    
@@ -8,40 +11,85 @@
                  box-sizing: border-box;
 }
 
-html { 
-    overflow-y: scroll; /* Render a vertical scrollbar to prevent jumpy page */
-}
-
 body {
-    background: #F5F5F5;
-    font: 13px/21px 'Open Sans', sans-serif;
-    color: #666;
+    background: #F5F5F5; /* Background color! */
+    font: 16px/21px 'Helvetica Neue', 'Arial', sans-serif; /* Setting the font to Helvetica Neue, with Arial as a backup. */
+    color: #444444; /* Setting the font-color to #444444; */
 }
-
-/*if you're using a large image as a background and want to ensure that it stays responsive, 
-  un-comment the lines of code below.*/
-
-/*
-body {
-	background-image: url('../image.jpg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-*/
 
 img {
-    max-width: 100%; /* Make images responsive */
-    display: block;
+    max-width: 100%; /* Make images responsive, by making them fill 100% of their parent element if possible. */
+    display: block;  /* Render images as block-level element. */
 }
 
 li { 
     list-style: none; /* Remove bullets on lists */
 }
+
+/*Boom Grid Setup*/
+
+.boom {
+    max-width: 960px; 
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+/*Fix width for floated elements - 
+This makes sure that floated elements 
+aren't allowed to mess up the how the
+grid is rendered. */
+.boom:before, .boom:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*All classes with names that start with
+'boom-', will have the following styles
+applied to them. CSS has a wild-card selector!
+Who'd have thought?
+
+All the column classes
+
+*/
+[class*='boom-'] {
+  float: left; /* Always left aligned, so the grid messes up less. */
+  display: inline-block; /* Let's have the render on the same level! */
+  padding: 20px 10px 0 10px; /* Let's give each column some breathing space! */
+}
+
+/* Column classes! 
+
+Widths correspond to class name and 
+vice-versa, for ease of development. */
+
+.boom-whole       	{ width: 100%;   }
+.boom-fourfifths  	{ width: 80%;    }
+.boom-threefourths 	{ width: 75%;    }
+.boom-twothirds   	{ width: 66.66%; }
+.boom-half        	{ width: 50%;    }
+.boom-third       	{ width: 33.33%; }
+.boom-quarter     	{ width: 25%;    }
+.boom-fifth       	{ width: 20%;    }
+
+
+/* This is a media query.
+
+If the maximum width of the (mobile/desktop) 
+browser window is 480px or less, collapse
+the grid, and set the width of all these 
+classes to 100% width. */
+
+@media only screen and (max-width: 480px) {
+    .boom-whole,
+    .boom-half,
+    .boom-third,
+    .boom-quarter,
+    .boom-fifth   	{ width: 100%;   }
+}
+
+
+/* Typography */
 
 a, a:visited {
     color: #f56559;
@@ -53,49 +101,13 @@ a:hover {
         color: #DC5145;
 }
 
+/* These heading styles are specified in 'em'.
+It is a measurement value in CSS that basically
+refers to the current font-size.
 
-/*Boom Grid Setup*/
+1.2em is 1.2x the current font-size, 2em is 2x, and so on... */
 
-.boom {
-    max-width: 960px;
-    margin: auto;
-    padding-bottom: 20px;
-}
-
-/* -- Fix width for floated elements -- */
-.boom:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* --------------------------------------------------------------
---- Boom - Responsive Grid
--------------------------------------------------------------- */
-
-.boom-whole       	{ width: 100%;   }
-.boom-fourfifths  	{ width: 80%;    }
-.boom-threefourths 	{ width: 75%;    }
-.boom-twothirds   	{ width: 66.66%; }
-.boom-half        	{ width: 50%;    }
-.boom-third       	{ width: 33.33%; }
-.boom-quarter     	{ width: 25%;    }
-.boom-fifth       	{ width: 20%;    }
-
-@media only screen and (max-width: 480px) {
-    .boom-whole,
-    .boom-half,
-    .boom-third,
-    .boom-quarter,
-    .boom-fifth   	{ width: 100%;   }
-}
-
-@media only screen and (max-width: 480px) {
-    header 	   	{ width: 100%;   }
-}
-
-
-/* Typography */
+/* 
 
 h1 {
     font-size: 1.5em; /* 24px */
