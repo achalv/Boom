@@ -106,7 +106,8 @@ refers to the current font-size.
 
 1.2em is 1.2x the current font-size, 2em is 2x, and so on... */
 
-/* 
+/* line-height specifies how much vertical space each line takes up. 
+This can also be specified in em units. */
 
 h1 {
     font-size: 1.5em; /* 24px */
