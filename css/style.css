@@ -49,8 +49,6 @@ grid is rendered. */
 applied to them. CSS has a wild-card selector!
 Who'd have thought?
 
-All the column classes
-
 */
 [class*='boom-'] {
   float: left; /* Always left aligned, so the grid messes up less. */
