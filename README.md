@@ -3,6 +3,8 @@ Boom
 
 This is Boom, a boilerplate I developed for quick and simple prototyping within the browser.
 
+>I personally don't use this any more because I think there are utils out there that are better. Feel free to go through this code, use it as you see fit, and let me know if you have something in mind. I guess you could say that Boom is deprecated. Sort of. :(
+
 This is far from perfect - I developed it at a hackathon, and I feel that until all loopholes have been closed, its use should be limited to quick proyotyping.
 
 Say you're at a hackathon and you're running out of time. You need to whip up a responsive front-end quickly, just for the sake of displaying your project, or showing off and saying - "Hey you - this project, yeah, IT FITS." 
